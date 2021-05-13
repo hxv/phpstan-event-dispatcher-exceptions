@@ -1,0 +1,40 @@
+{
+    "name": "hxv/phpstan-event-dispatcher-exceptions",
+    "type": "phpstan-extension",
+    "description": "PHPStan extension and rules for exceptions in Symfony EventDispatcher.",
+    "require": {
+        "php": "^7.1|^8.0",
+        "phpstan/phpstan": "^0.12.87",
+        "symfony/event-dispatcher": "^4.3|^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-strict-rules": "^0.12.9"
+    },
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Michał Włodarczyk",
+            "email": "admin@hxv.me"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "hxv\\PHPStanEventDispatcherExceptions\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "hxv\\PHPStanEventDispatcherExceptions\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+services:
+    -
+        class: hxv\PHPStanEventDispatcherExceptions\EventClassResolver
+    -
+        class: hxv\PHPStanEventDispatcherExceptions\EventDispatcherThrowTypeExtension
+        tags:
+            - phpstan.dynamicMethodThrowTypeExtension
+    -
+        class: hxv\PHPStanEventDispatcherExceptions\EventSubscriberThrowTypeRule
+        tags:
+            - phpstan.rules.rule

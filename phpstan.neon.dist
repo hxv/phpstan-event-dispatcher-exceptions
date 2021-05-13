@@ -1,0 +1,13 @@
+parameters:
+    level: max
+    paths:
+        - src/
+    exceptions:
+        check:
+            missingCheckedExceptionInThrows: true
+            tooWideThrowType: true
+        uncheckedExceptionClasses:
+            - LogicException
+    implicitThrows: false
+includes:
+    - extension.neon
